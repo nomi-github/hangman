@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".container").append(" <div class='cloud'></div>");
   $(".container").append(" <div class='cloud cloud2'></div>");
-  $(".ground").append(' <img src="/images/water2.png" class="waterTop"/>');
-  $(".ground").append(' <img src="/images/croc.png" class="croc" id="croc1" />');
-  $(".ground").append(' <img src="/images/croc.png" class="croc" id="croc2"/>');
+  $(".ground").append(' <img src="images/water2.png" class="waterTop"/>');
+  $(".ground").append(' <img src="images/croc.png" class="croc" id="croc1" />');
+  $(".ground").append(' <img src="images/croc.png" class="croc" id="croc2"/>');
   $("#actualTime").html(transformSecToMin(totalTime));
   moveHangingRope();
 });
