@@ -152,7 +152,7 @@ button:hover {
     left: -62px;
     width: 100px;
     height: 250px;
-    background: url("images/hanging.png");
+    background: url("../images/hanging.png");
     background-size: cover;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -160,7 +160,7 @@ button:hover {
 }
 
 .success {
-    background-image: url("images/success.png") !important;
+    background-image: url("../images/success.png") !important;
     background-size:contain !important;
     background-repeat: no-repeat !important;
     width: 300px !important;
@@ -170,6 +170,6 @@ button:hover {
 .drowning {
     width: 200px !important;
     left: -100px !important;
-    background: url("images/drowning.png") !important;
+    background: url("../images/drowning.png") !important;
     background-size: cover !important;
 }
