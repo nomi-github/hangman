@@ -130,7 +130,7 @@ function showRemainingQuestions() {
 }
 
 
-let hangingImages = ["/images/hanging.png", "/images/hanging3.png"];
+let hangingImages = ["images/hanging.png", "images/hanging3.png"];
 let hangingIndex = 0;
 
 function toggleHangingImage() {    
