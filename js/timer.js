@@ -74,13 +74,13 @@ function checkGameStatus() {
     if (remainingTotalTime <= 0 || ropeHeight >maxRopeHeight) {
         clearInterval(mainTimeInterval);
         $("#hanging-man").addClass("drowning");
-        toggleDialog();        
+        toggleDialog(isWinner);        
     } 
     else if (ropeHeight<=defaultRopeHeight && answersCorrect>=5) {
         isWinner = true;
         clearInterval(mainTimeInterval);
         $("#hanging-man").addClass("success");
-        toggleDialog();
+        toggleDialog(isWinner);
     }
 }
 
@@ -139,7 +139,7 @@ function toggleHangingImage() {
     $("#hanging-man").css("background-image", "url("+hangingImages[hangingIndex]+")");
 }
 
-function toggleDialog() {
+function toggleDialog(isWinner) {
     if ($("#dialog").css("display") == "none") { 
         if(isWinner){
             $('#dialog .message').html("Hangman Saved! 🚁🌟 <br/>You nailed it! Five correct answers in 2 minutes – Crocodiles defeated, hangman rescued! <br/><br/>You're a true champion! 🏆🎉");
