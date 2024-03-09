@@ -149,7 +149,9 @@ function toggleDialog(isWinner) {
             $('#dialog .message').html("Crocs got the win this time! 🐊⌛ <br/>Don't sweat it – hangman will be back for another daring escape. <br/>Ready for a rematch? 🚁💪");
             $('#dialog img').attr("src", "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazZ4cG4zaTZlaXN6Y3drejh5Z28xenpiNTJ6M3VmODE4dnlhd3praCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/McZw215HSZCeJ2CMun/giphy.gif");
         }
-        $("#dialog").css("display", "flex");
+        setTimeout(function() {
+            $("#dialog").css("display", "flex")
+        },100);
     } else {
         $("#dialog").css("display", "none");
     }
